@@ -1,3 +1,4 @@
+var _conf = require("./_conf.js");
 var oauthConfig = require("./oauth.js");
 var passport = require("passport");
 var LocalStategy = require("passport-local").Strategy;

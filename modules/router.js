@@ -40,8 +40,8 @@ var router = function(app) {
         next();
     });
     app.get('/auth/google/callback', passport.authenticate("google", {
-            successRedirect: _conf.clientUrl + "/profile",
-            failureRedirect: _conf.clientUrl + "/landing"
+            successRedirect: _conf.clientUrl +"/landing",
+            failureRedirect: _conf.clientUrl +"/error"
         })
     );
 
